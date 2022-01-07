@@ -1,0 +1,27 @@
+{
+  "name": "checkytsubscription",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "npm run start --prefix client",
+    "server": "nodemon server/index.js",
+    "start": "concurrently \"npm run client\" \"npm run server\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1neye/CheckYtSubscription.git"
+  },
+  "author": "Ineye",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/1neye/CheckYtSubscription/issues"
+  },
+  "homepage": "https://github.com/1neye/CheckYtSubscription#readme",
+  "dependencies": {
+    "concurrently": "^7.0.0",
+    "gapi-script": "^1.2.0",
+    "koa": "^2.13.4",
+    "nodemon": "^2.0.15"
+  }
+}
