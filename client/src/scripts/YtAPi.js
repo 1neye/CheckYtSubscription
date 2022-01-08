@@ -1,5 +1,6 @@
 
 import { gapi } from 'gapi-script';
+// require('dotenv').config()
 
 export function authenticate () {
     return gapi.auth2.getAuthInstance()
@@ -8,7 +9,8 @@ export function authenticate () {
               function(err) { console.error("Error signing in", err); });
   }
 export function loadClient() {
-    gapi.client.setApiKey("AIzaSyDM7nHNNDiC1UqfEoTev7UBRrFSbRH6RAY");
+  console.log(process.env)
+    gapi.client.setApiKey(`${process.env.REACT_APP_API_KEY}`);
     return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
         .then(function() { console.log("GAPI client loaded for API"); },
               function(err) { console.error("Error loading GAPI client for API", err); });
@@ -30,7 +32,7 @@ export function execute () {
               function(err) { console.error("Execute error", err); });
   }
   gapi.load("client:auth2", function() {
-    gapi.auth2.init({client_id: "946260688350-qvla8d05taeh446circernf772ddcesv.apps.googleusercontent.com"});
+    gapi.auth2.init({client_id: `${process.env.REACT_APP_CLIENT_ID}`});
   });
 
 export function checkSubscription (res) {
