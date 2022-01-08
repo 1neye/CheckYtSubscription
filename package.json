@@ -19,7 +19,6 @@
   "bugs": {
     "url": "https://github.com/1neye/CheckYtSubscription/issues"
   },
-  "homepage": "https://1neye.github.io/CheckYtSubscription",
   "dependencies": {
     "concurrently": "^7.0.0",
     "gapi-script": "^1.2.0",
