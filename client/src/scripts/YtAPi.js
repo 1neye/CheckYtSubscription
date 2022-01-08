@@ -1,6 +1,5 @@
 
 import { gapi } from 'gapi-script';
-// require('dotenv').config()
 
 export function authenticate () {
     return gapi.auth2.getAuthInstance()
@@ -21,7 +20,7 @@ export function execute () {
       "part": [
         "snippet,contentDetails"
       ],
-      "forChannelId": "UC_x5XG1OV2P6uZZ5FSM9Ttw",
+      "forChannelId": "UCaR4U-N4qZIiwUOAPRMyvBw",
       "mine": true
     })
         .then(function(response) {
