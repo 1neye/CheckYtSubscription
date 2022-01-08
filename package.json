@@ -3,13 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://1neye.github.io/CheckYtSubscription",
   "scripts": {
-    "predeploy": "npm run build --prefix client",
-    "deploy": "gh-pages -d client/build",
     "client": "npm run start --prefix client",
     "server": "nodemon server/index.js",
-    "start": "concurrently \"npm run client\" \"npm run server\""
+    "start": "concurrently \"npm run client\" \"npm run server\"",
+    "predeploy": "npm run build --prefix client",
+    "deploy": "gh-pages -d client/build"
   },
   "repository": {
     "type": "git",
@@ -20,6 +19,7 @@
   "bugs": {
     "url": "https://github.com/1neye/CheckYtSubscription/issues"
   },
+  "homepage": "https://1neye.github.io/CheckYtSubscription",
   "dependencies": {
     "concurrently": "^7.0.0",
     "gapi-script": "^1.2.0",
