@@ -4,7 +4,7 @@ let Content = ( ) => {
             <div>
                 <h1>Спасибо!</h1>
                 <p>Можете получить материалы, нажава по кнопке ниже.</p>
-                <button>Получить контент</button>
+                <button onClick={() => window.open('https://github.com/1neye/CheckYtSubscription')}>Получить контент</button>
             </div>
         </div>
     )
