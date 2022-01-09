@@ -35,7 +35,7 @@ let SubscribePage = (props) => {
             <button onClick={checkFunc}>Я подписался!</button>
             </div>
 
-            <div class='error__red'>{props.auth.errorMsg}</div>
+            <div className='error__red'>{props.auth.errorMsg}</div>
         </div>
     )
 }
