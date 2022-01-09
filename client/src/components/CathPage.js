@@ -5,11 +5,11 @@ let CathPage = () => {
     let navigate = useNavigate();
 
     return (
-        <div>
+        <div className="wrapper">
             <h1>Привет я вижу ты хочешь получить код.</h1>
             <p>Забирай код ниже по кнопке</p>
             <button onClick={() => {
-                navigate("/Subscribe", { replace: true });
+                navigate("/Subscribe");
             }}>Получить код</button>
         </div>
     )

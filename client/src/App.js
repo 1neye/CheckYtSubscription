@@ -18,11 +18,10 @@ function App (){
 
 <>
 <Routes>
-  <Route path="/" element={<CathPage />}/>
-  <Route path="/Subscribe" element={<SubscribePage auth={auth} setAuth={setAuth} />}/>
-  <Route path="/ContentPage" element={!auth ? <Navigate to='/'/> : <ContentPage/>}/>
+  <Route  path="/" element={<CathPage />} />
+  <Route path="Subscribe" element={<SubscribePage auth={auth} setAuth={setAuth} />}/>
+  <Route path="ContentPage" element={!auth.auth ? <Navigate to='/'/> : <ContentPage/>}/>
 </Routes>
-
 </>
   )
 }

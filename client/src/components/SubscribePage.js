@@ -25,16 +25,17 @@ let SubscribePage = (props) => {
     }
 
     return (
-        <div>
-            <h1>Что бы ссылка на код стала доступна, подпишись на мой youtube канал.</h1>
+        <div className='wrapper'>
+            <h1>Что бы ссылка на код стала доступна. </h1>
+            <p>Подпишись на мой YOUTUBE канал.</p>
             <div>
             <button onClick={() => {
                 window.open('https://www.youtube.com/channel/UCaR4U-N4qZIiwUOAPRMyvBw?sub_confirmation=1')
             }}>Подписаться</button>
-            <button onClick={checkFunc}>Я подписался</button>
+            <button onClick={checkFunc}>Я подписался!</button>
             </div>
 
-            <div>{props.auth.errorMsg}</div>
+            <div class='error__red'>{props.auth.errorMsg}</div>
         </div>
     )
 }

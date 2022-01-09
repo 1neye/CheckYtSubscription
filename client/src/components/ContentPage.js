@@ -3,7 +3,7 @@ import Content from './Content';
 
 const ContentPage = (props) => {
     return (
-        <div>
+        <div className="wrapper">
             <Content />
         </div>
     )
