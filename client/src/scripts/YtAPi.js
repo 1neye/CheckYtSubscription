@@ -1,4 +1,3 @@
-
 import { gapi } from 'gapi-script';
 
 export function authenticate () {
